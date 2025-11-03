@@ -15,7 +15,7 @@ sudo apt update -y
 sudo apt upgrade -y
 ```
 
-## 2.  installation JENKINS
+## 2. installation JENKINS
 
 ```bash
 # ajouter la clé du référentiel jenkins a notre système
@@ -40,7 +40,7 @@ sudo systemctl disable --now jenkins
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-## 3.  installation DOCKER
+## 3. installation DOCKER
 
 ```bash
 # installer docker en ajoutant au préalable la clé du référentiel
@@ -56,3 +56,8 @@ sudo systemctl enable --now docker
 sudo usermod -aG docker jenkins
 groups jenkins
 ```
+
+## 3. tips JENKINS
+
+Accès aux variables d'environnement jenkins
+>http://localhost:8080/env-vars.html/
