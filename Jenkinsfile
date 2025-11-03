@@ -61,10 +61,10 @@ pipeline {
         }
         stage('User Acceptance') {
             steps{
-                input {
+                input (
                     message: "Proceed with push to main",
                     ok: "Yes"
-                }    
+                )
             }
         }
         stage('Pushing and Merging'){
