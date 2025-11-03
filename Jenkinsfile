@@ -39,12 +39,12 @@ pipeline {
             }
         }
         stage('Building') {
-            steps {
+            steps { // NB : we should have a tooling for python to use python command (like ShiningPanda)
                   sh 'python3 -m pip install --user -r requirements.txt'
             }
         }
         stage('Testing') {
-            steps {
+            steps { // NB : we should have a tooling for python to use python command (like ShiningPanda)
                   sh 'python3 -m unittest'
             }
         }
