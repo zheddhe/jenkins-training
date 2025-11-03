@@ -63,4 +63,6 @@ Accès aux variables d'environnement jenkins
 >http://localhost:8080/env-vars.html/
 
 Pour mettre en place un webhook il faut que jenkins soit publié sur une URL publique afin que github puisse envoyer sur
->https://URL_PUBLIQUE_JENKINS:8080/github-webhook/ (avec authentification OATH2 si besoin)
+>http://URL_PUBLIQUE_JENKINS:8080/github-webhook/ (avec authentification OATH2 si besoin)
+
+ou mieux : via un reverse proxy (NGINX par exemple) avoir une adrese HTTPS (signé par un CA reconnu comme Let’s Encrypt, GlobalSign, etc.)
