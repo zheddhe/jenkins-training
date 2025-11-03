@@ -40,12 +40,12 @@ pipeline {
         }
         stage('Building') {
             steps {
-                  sh 'pip install -r requirements.txt'
+                  sh 'python3 -m pip install --user -r requirements.txt'
             }
         }
         stage('Testing') {
             steps {
-                  sh 'python -m unittest'
+                  sh 'python3 -m unittest'
             }
         }
         stage('Deploying') {
